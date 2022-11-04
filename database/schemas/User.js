@@ -16,6 +16,11 @@ const User = new mongoose.Schema({
     required: true,
     select: false,
   },
+  cpf: {
+    type: String,
+    required: true,
+    unique: true,
+  },
   createdAt: {
     type: Date,
     default: Date.now(),
